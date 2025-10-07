@@ -1,0 +1,115 @@
+/* Estilos generales para toda la página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para la cabecera con el título principal */
+header {
+    background-color: #5d54a4;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Contenedor principal de la galería */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+}
+
+/* Estilos para cada tarjeta de perfil */
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s; /* Efecto suave al pasar el ratón */
+}
+
+.profile-card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el ratón */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.profile-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 8px;
+    background-color: #eee; /* Color de fondo mientras no hay imagen */
+}
+
+/* Estilos para el nombre de la persona en la tarjeta */
+.profile-card h3 {
+    color: #5d54a4;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+/* --- Estilos para la página de biografía --- */
+
+.bio-container {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.bio-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.bio-container h1 {
+    font-size: 3em;
+    color: #5d54a4;
+}
+
+.bio-container h2 {
+    font-size: 1.5em;
+    color: #8c86c1;
+    margin-top: -15px;
+    font-weight: normal;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #5d54a4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #4a438a;
+}
+
+/* Estilo para que las tarjetas no tengan subrayado */
+.card-link {
+    text-decoration: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujeres que Hicieron Historia</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <header>
+        <h1>Mujeres que Hicieron Historia</h1>
+        <p>Descubre la vida de mujeres increíbles que cambiaron el mundo.</p>
+    </header>
+
+    <main>
+        <h2>Galería de Pioneras</h2>
+        <section class="gallery">
+            
+           <a href="marie-curie.html" class="card-link">
+    <article class="profile-card">
+        <img src="images/marie-curie.jpg" alt="Retrato de Marie Curie">
+        <h3>Marie Curie</h3>
+    </article>
+</a>
+
+            <article class="profile-card">
+                <img src="images/carolina-marin.jpg" alt="Carolina Marín jugando bádminton">
+                <h3>Carolina Marín</h3>
+            </article>
+
+            <article class="profile-card">
+                <img src="images/clara-campoamor.jpg" alt="Retrato de Clara Campoamor">
+                <h3>Clara Campoamor</h3>
+            </article>
+
+        </section>
+    </main>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('Service Worker registrado con éxito:', registration);
+        })
+        .catch(error => {
+          console.log('Fallo en el registro de Service Worker:', error);
+        });
+    });
+  }
+</script>
+</body>
+</html>
